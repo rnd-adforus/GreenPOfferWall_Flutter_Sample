@@ -1,0 +1,61 @@
+PODS:
+  - adforus_greenp_plugin (0.0.1):
+    - Flutter
+    - GreenPOfferWall (= 3.5.0)
+  - Ads-Global (6.4.1.2):
+    - Ads-Global/BUAdSDK (= 6.4.1.2)
+  - Ads-Global/BUAdSDK (6.4.1.2)
+  - Flutter (1.0.0)
+  - Google-Mobile-Ads-SDK (12.0.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleMobileAdsMediationPangle (6.4.1.2.1):
+    - Ads-Global (= 6.4.1.2)
+    - Google-Mobile-Ads-SDK (~> 12.0)
+  - GoogleMobileAdsMediationUnity (4.13.1.1):
+    - Google-Mobile-Ads-SDK (~> 12.0)
+    - UnityAds (= 4.13.1)
+  - GoogleUserMessagingPlatform (2.7.0)
+  - GreenPOfferWall (3.5.0)
+  - UAdKit (1.1.0):
+    - Google-Mobile-Ads-SDK (< 12.1.0, >= 12.0.0)
+    - GoogleMobileAdsMediationPangle (< 6.5.0.8.0, >= 6.4.1.2.1)
+    - GoogleMobileAdsMediationUnity (= 4.13.1.1)
+  - UnityAds (4.13.1)
+
+DEPENDENCIES:
+  - adforus_greenp_plugin (from `.symlinks/plugins/adforus_greenp_plugin/ios`)
+  - Flutter (from `Flutter`)
+  - UAdKit (= 1.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Ads-Global
+    - Google-Mobile-Ads-SDK
+    - GoogleMobileAdsMediationPangle
+    - GoogleMobileAdsMediationUnity
+    - GoogleUserMessagingPlatform
+    - GreenPOfferWall
+    - UAdKit
+    - UnityAds
+
+EXTERNAL SOURCES:
+  adforus_greenp_plugin:
+    :path: ".symlinks/plugins/adforus_greenp_plugin/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  adforus_greenp_plugin: 726a3edabb500a473dc4bf6c3265af3cfce57f94
+  Ads-Global: 4050dd34ff7865a189b53bcb01d1b2405cf280d3
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  Google-Mobile-Ads-SDK: 14a8e52164a89a44178bd67d544f207969f8d69a
+  GoogleMobileAdsMediationPangle: e314cc6e7ab92c03f352940ba7cff077a3605805
+  GoogleMobileAdsMediationUnity: e49fc8528e8d27b23cbb1fb59c13728aa0c6cdd3
+  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  GreenPOfferWall: 639cfcf1e76819fde423934807c4088edc943b77
+  UAdKit: 7152b62a03f9f963239105d3310ba047e649fcc8
+  UnityAds: 213536f6565ba7139f6ba425910edada720ceb9d
+
+PODFILE CHECKSUM: bc372bd509d6b78a6e3001eb3d48ec7dccedc0aa
+
+COCOAPODS: 1.16.2
