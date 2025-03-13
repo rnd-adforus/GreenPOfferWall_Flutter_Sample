@@ -8,3 +8,4 @@
 
 - Flutter 플렛폼 지원
     - [지원 샘플 가이드](https://github.com/rnd-adforus/GreenPOfferWall_Flutter_Sample/wiki/GreenP-OfferWall-Flutter-Plugin-Guide)
+    - [ChangeLog](https://github.com/rnd-adforus/GreenPOfferWall_Flutter_Sample/wiki/Change-Log)
