@@ -1,7 +1,10 @@
 PODS:
-  - adforus_greenp_plugin (0.0.1):
+  - adforus_greenp_plugin (1.0.3):
     - Flutter
     - GreenPOfferWall (= 3.5.0)
+  - adforus_uad_adapter (1.0.1):
+    - Flutter
+    - UAdKit (= 1.1.0)
   - Ads-Global (6.4.1.2):
     - Ads-Global/BUAdSDK (= 6.4.1.2)
   - Ads-Global/BUAdSDK (6.4.1.2)
@@ -24,6 +27,7 @@ PODS:
 
 DEPENDENCIES:
   - adforus_greenp_plugin (from `.symlinks/plugins/adforus_greenp_plugin/ios`)
+  - adforus_uad_adapter (from `.symlinks/plugins/adforus_uad_adapter/ios`)
   - Flutter (from `Flutter`)
   - UAdKit (= 1.1.0)
 
@@ -41,11 +45,14 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   adforus_greenp_plugin:
     :path: ".symlinks/plugins/adforus_greenp_plugin/ios"
+  adforus_uad_adapter:
+    :path: ".symlinks/plugins/adforus_uad_adapter/ios"
   Flutter:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  adforus_greenp_plugin: 726a3edabb500a473dc4bf6c3265af3cfce57f94
+  adforus_greenp_plugin: 7aae80e7988067231a9ffd9bf32d0d438cab49bc
+  adforus_uad_adapter: 57284ff73f69aee0ce33da5f7f2f8fdaefc49fb9
   Ads-Global: 4050dd34ff7865a189b53bcb01d1b2405cf280d3
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   Google-Mobile-Ads-SDK: 14a8e52164a89a44178bd67d544f207969f8d69a
