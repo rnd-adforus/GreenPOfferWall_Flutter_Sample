@@ -1,7 +1,6 @@
 import 'dart:io';
-import 'package:adforus_greenp_plugin/green_p/greenp_sdk_manager.dart';
+import 'package:adforus_greenp_plugin/greenp_offer/greenp_manager.dart';
 import 'package:flutter/material.dart';
-
 
 void main() async {
   runApp(MaterialApp(home: HomePage()));
@@ -23,9 +22,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   initSDK() async {
-    await greenpSdkManager.initGreenpSDK(
-      appCode: Platform.isIOS ? "B8PcNMrpS7" : "ZBhFaS5kxE",
+    await greenpSdkManager.initializeSdk(
+      appId: Platform.isIOS ? "B8PcNMrpS7" : "ZBhFaS5kxE",
       userId: "1234",
+      onSuccess: () {},
       onFailed: (error) {
         print("Initialize Error $error");
       },
@@ -43,9 +43,17 @@ class _HomePageState extends State<HomePage> {
           Center(child: Text("${greenpSdkManager.sdkStatus}")),
           TextButton(
             onPressed: () {
-              greenpSdkManager.navigateToOfferWall();
+              greenpSdkManager.startOfferWallActivity(
+                onLaunch: () {
+                  //Successful Launch
+                  print("OfferWall Launched");
+                },
+                onFailed: (String errorMessage) {
+                  print("OfferWall Failed $errorMessage");
+                },
+              );
             },
-            child: Text("Go to Offerwall for test"),
+            child: Text("Go to Offer Wall"),
           ),
         ],
       ),
