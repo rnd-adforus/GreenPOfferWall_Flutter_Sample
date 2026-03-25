@@ -31,8 +31,7 @@ class _HomePageState extends State<HomePage> {
   //Create The function
   initSDK() async {
     await greenpSdkManager.initializeSdk(
-      // appId: Platform.isIOS ? "B8PcNMrpS7" : "ZBhFaS5kxE",
-      appId: Platform.isIOS ? "WaFfpYFh1d" : "04tekfmn06",
+      appId: Platform.isIOS ? "99WXq9XbJA" : "04tekfmn06",
       userId: "1234",
       onSuccess: () {
         print("Initialize Success");
