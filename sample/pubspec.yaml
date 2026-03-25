@@ -36,7 +36,6 @@ dependencies:
   cupertino_icons: ^1.0.8
   adforus_greenp_plugin: ^3.1.0
   adforus_uad_adapter: ^2.1.0
-  google_mobile_ads: ^7.0.0
 
 dev_dependencies:
   flutter_test:
