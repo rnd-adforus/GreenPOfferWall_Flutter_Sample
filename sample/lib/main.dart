@@ -3,7 +3,14 @@ import 'package:adforus_greenp_plugin/greenp_offer/greenp_manager.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
-  runApp(MaterialApp(home: HomePage()));
+  runApp(
+    MaterialApp(
+      home: HomePage(),
+      builder: (context, widget) {
+        return widget!;
+      },
+    ),
+  );
 }
 
 class HomePage extends StatefulWidget {
@@ -21,11 +28,15 @@ class _HomePageState extends State<HomePage> {
     initSDK();
   }
 
+  //Create The function
   initSDK() async {
     await greenpSdkManager.initializeSdk(
-      appId: Platform.isIOS ? "B8PcNMrpS7" : "ZBhFaS5kxE",
+      // appId: Platform.isIOS ? "B8PcNMrpS7" : "ZBhFaS5kxE",
+      appId: Platform.isIOS ? "WaFfpYFh1d" : "04tekfmn06",
       userId: "1234",
-      onSuccess: () {},
+      onSuccess: () {
+        print("Initialize Success");
+      },
       onFailed: (error) {
         print("Initialize Error $error");
       },
